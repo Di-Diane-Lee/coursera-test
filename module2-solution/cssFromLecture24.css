@@ -1,0 +1,122 @@
+/********** Base styles **********/ 
+
+* {
+  box-sizing: border-box;
+  background-color: #f56c57;
+}
+
+
+
+/****top header****/
+
+h1 {
+  color: #231b12;
+  font-family: Helvetica;
+  font-size: 40px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+/****formatting for each box****/
+
+.p {
+  border: 1px solid black;
+  background-color: #acc4ac;
+  width: 100%; 
+  height: 275px;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: Helvetica;
+  color: black;
+  position: relative;
+
+}
+
+/****using class selector for formatting header within each box****/
+
+.h2 {
+  border: 1px solid black;
+  background-color: #B8D20B;
+  width: 150px;
+  height: 50px;
+  padding: 6px;
+  margin-bottom: 15px;
+  font-family: Helvetica;
+  color: #231b12;
+  position: relative;
+  text-align: center;
+  float: right;
+  clear: left;
+  font-size: 30px;
+
+}
+
+/****using id selectors to define background color for each individual header box****/
+#chicken {
+  background-color: #efb28c;
+}
+
+#beef {
+  background-color: #f7374b;
+}
+
+#sushi {
+  background-color: #fe8a6c;
+}
+
+
+
+/****formatting for text within each box****/
+
+.p2 {
+  background-color: transparent;
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  font-family: Helvetica;
+  color: black;
+  position: relative;
+  text-align: left;
+  font-size: 12px;
+  clear: right;
+}
+
+
+
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+}
+
+
+/********** Desktop view **********/
+@media (min-width: 992px) {
+  .col-lg-1 {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+  }
+}
+
+/********** Tablet view **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-1, .col-md-2 {
+    float: left; 
+    padding: 10px;
+  }
+  .col-md-1 {
+    width: 50%;
+  }
+  .col-md-2 {
+    width: 100%;
+  }
+}
+
+/********** Mobile view **********/
+@media (max-width: 767px) {
+  .col-sm-1 {
+    float: left;
+    width: 100%;
+    padding: 10px;
+  }
+}
